@@ -1,0 +1,50 @@
+body {
+    color: #608063;
+    background-color: #73FF81;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background-color: #398040;
+}
+
+.container {
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+div {
+    padding: 2px 15px;
+    margin: 10px 0px;
+    border-left: 5px  solid #398040;
+    border-right: 5px  solid #398040;
+    border-radius: 15px;
+    background-color: #99CC9E;
+}
+
+div:nth-child(even) {
+    background-color:  #BFFFC6;
+}
+
+h2, h3, h4 {
+    color: #398040;
+    padding: 15px 3px;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    color: #99CC9E;
+    padding: 30px 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    color : #398040;
+    text-decoration: none;
+}
+
+pre {
+    background-color: #608063;
+    color: #99CC9E;
+}
