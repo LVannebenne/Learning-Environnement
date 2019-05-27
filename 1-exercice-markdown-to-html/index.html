@@ -1,1 +1,188 @@
-<!doctype>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=576, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Synthèse Markdown</title>
+</head>
+
+<body>
+    <div class="header"><h1>Synthèse MarkDown</h1></div>
+    <div class="container">
+        <H2 id="table">Table des matières</H2>
+        <ul>
+            <li><a href="#histoire">Historique</a></li>
+            <li><a href="#utilisation">Cas d'utilisation</a></li>
+            <li><a href="#Syntaxe">Syntaxe</a></li>
+            <ul>
+                <li><a href="#Format">Format</a></li>
+                <ul>
+                    <li><a href="#paragraphes">Les paragraphes</a></li>
+                    <li><a href="#sautsLignes">Sauts de lignes</a></li>
+                    <li><a href="#miseEnForme">Mise en forme du texte</a></li>
+                    <li><a href="#blockquote">Blocs de citation</a></li>
+                    <li><a href="#code">Code affichable</a></li>
+                </ul>
+                <li><a href="#Listes">Listes</a></li>
+                <ul>
+                    <li><a href="#listOrd">Listes ordonnées</a></li>
+                    <li><a href="#listNonOrd">Listes non-ordonnées</a></li>
+                    <li><a href="#listImb">Listes imbriquées</a></li>
+                </ul>
+                <li><a href="#Titres">Titres</a></li>
+                <li><a href="#Tableaux">Tableaux</a></li>
+                <li><a href="#Liens">Liens</a></li>
+                <li><a href="#Images">Images</a></li>
+            </ul>
+        </ul>
+        <div>
+            <h2 id="histoire">Petite histoire de Markdown</h2>
+
+            <p>Markdown est un système d'édition et de formatage de texte. Il est l'oeuvre de deux américains: <b>John Gruber</b> et <b>Aaron Swartz</b>. C'est un langage assez récent. En effet, il ne date que de 2004 et n'a subit aucune modifictaion depuis.</p>
+            <p>Le but est assez simple: éditer des textes <b>simples</b> avec quelques caractères spéciaux: gras, taille des textes, italiques, etc... </p>
+            <p>Du fait que le format n'a jamais été standardisé, il dispose de nombreuses implémentations (Dans <i>GitHub</i> et dans <i>Stack Overflow</i> pour les plus répandues). Il est par contre déconseillé de s'en servir hors besoins spécifiques car ces implémentations ne sont pas compatibles.</p>
+            <a href="#table">Retour à la Table des Matières</a>
+        </div>
+        <div>
+            <h2 id="utilisation">Utilisation</h2>
+
+            <p>Le but de Markdown est que ce soit <b>lisible</b> sans même utiliser un interpréteur en mode texte.</p>
+            <p>C'est un langage facile d'accès et facilement visualisable avant d'être converti dans sa version de
+            <b>"présentation"</b>.</p>
+            <p> Un autre avantage de <i>Markdown</i>, du fait que le résulat sera exporté en HTML est que ce langage accepte les balises <i>HTML</i>, pour pouvoir quand même faire des animations, intégrer des vidéos et d'autres fonctionnalités non présentes dans <i>Markdown</i>.</p>
+            
+            <p>En général, les documents sont enregistrés avec l'extension .md ou .markdown .</p>
+        
+            <img src="https://memegenerator.net/img/instances/53358119/now-lets-get-ready-to-learn.jpg" width="300" alt="Now let's get ready to LEARN" /><br \>
+            <a href="#table">Retour à la Table des Matières</a>
+        </div>
+        <div>
+            <h2 id="Syntaxe">Syntaxe</h2>
+            <div>
+                <H3 id="Format">Format</H3>
+        
+                <p>Il existe deux syntaxes pour les titres. Le résultat sera le même quelque soit la méthode employée. Essayez simplement
+                d'en choisir une et de vous y tenir afin de rester cohérent.</p> 
+                <div>
+                    <h4 id="paragraphes">Les paragraphes</h4>
+            
+                    <p>Pour afficher un paragraphe, sautez deux lignes et rédigez votre texte. Un seul saut de ligne correspond à un retour
+                    chariot (retour à la ligne) et non pas à un changement de paragraphe.</p>
+                    <a href="#table">Retour à la Table des Matières</a>
+                </div>
+                <div>
+                    <H4 id="miseEnForme">Mise en forme du texte</H4>
+            
+                    <p>Pour mettre en évidence un texte ou l'entoure de *, ~, ou _ selon le changement que l'on souhaite apporter.</p>
+            
+                    <pre><code>
+                        *Italique* = <i>Italique</i>
+                        **Gras** = <b>Gras</b>
+                        ***Italique Gras*** = <b><i>Italique Gras</i></b>
+                        ~~Barré~~ = <s>Barré</s>
+                    </code></pre>
+                    <a href="#table">Retour à la Table des Matières</a>
+                </div>
+                <div>
+                    <h4 id="blockquote">Blocs de citation</h4>
+        
+                    <p>Tapez un chevron fermant > ensuite une espace et le texte du paragraphe.</p>
+                    
+                    <blockquote>Voici un exemple de texte en bloc de citation et en paragraphe avec indentation. Le décalage à gauche persiste tant
+                    qu'on fait des retours chariot.</blockquote>
+                    
+                    <a href="#table">Retour à la Table des Matières</a>
+                </div>
+                <div>
+                    <h4 id="code">Code incorporé</h4>
+        
+                    <p>Voici du code incorporé.</p>
+                    
+                    <p>Pour afficher du code en tant que tel, voici deux solutions :</p>
+                    <li>Quatre espaces avant le code</li>
+                    <li>Trois tildes (~) avant et après + le mot clé html avant le code</li>
+                    <pre><code>
+                        ~~~html
+                        &lt;a href=“#”&gt;Du code&lt;/a&gt;
+                        ~~~
+                    </code></pre>
+                    <p>donne :</p> 
+                    <pre><code>
+                        &lt;a href="#"&gt;Du code&lt;/a&gt;
+                    </code></pre>
+                    <a href="#table">Retour à la Table des Matières</a>
+                    <div>
+                        <h3 id="listes">Des listes</h3>
+                        <p>Vous pouvez organiser les éléments en listes ordonnées et non ordonnées.</p>
+                        <div>
+                            <h4 id="listOrd">Listes ordonnées</h4>
+                            <p>Pour créer une liste ordonnée, ajoutez des éléments de ligne avec des nombres suivis de points. Les numéros ne doivent
+                            pas nécessairement être dans l’ordre numérique, mais la liste doit commencer par le numéro un.</p>
+                            <ol>
+                                <li>Element 1</li>
+                                <li>Element 2</li>
+                                <li>Element 3</li>
+                                <li>Element 4</li>
+                            </ol>
+                            <a href="#table">Retour à la Table des Matières</a>
+                        </div>
+                        <div>
+                            <h4 id="listNonOrd">Listes non ordonnées</h4>
+                            <p>Pour créer une liste non ordonnée, ajoutez des tirets (-), des astérisques (*) ou des signes plus (+) devant les
+                            éléments de la liste. Indentez un ou plusieurs éléments pour créer une liste imbriquée. Vous pouvez mixer ces signes, ils seront tous convertis à l'identique.</p>
+                            <pre><code>
+                            * Premier article
+                            - Deuxième article
+                            + Troisième article
+                            * Quatrième article
+                            </code></pre>
+                            <ul>
+                                <li>Article 1</li>
+                                <li>Article 2</li>
+                                <li>Article 3</li>
+                                <li>Article 4</li>
+                            </ul>
+                            <a href="#table">Retour à la Table des Matières</a>
+                        </div>
+                        <div>
+                            <h4 id="listImb">Listes imbriquées</h4>
+                            <ul>
+                                <li>Premier niveau de cette liste.</li>
+                                <ul>
+                                    <li>Pour créer un niveau imbriqué, ajoutez quatres espaces avant l’astérisque ou le numéro.</li>
+                                </ul>
+                                <ul>
+                                    <li>Article 1</li>
+                                    <li>Article 2</li>
+                                    <li>Article 3</li>
+                                    <ul>
+                                        <li>Article en retrait 1</li>
+                                        <li>Article en retrait 2</li>
+                                    </ul>
+                                    <li>Article de nouveau dans l'alignement 1</li>
+                                    <li>Article de nouveau dans l'alignement 2</li>
+                                </ul>
+                            </ul>
+                            <a href="#table">Retour à la Table des Matières</a>
+                        </div>
+                        <div>
+                            <h4 id="checkbox">Cases à cocher</h4>
+                            <p>Pour créer une liste des tâches, il faut insérer un espace et le faire suivre de [ ] , pour cocher une case il faite
+                            faire espace [x]</p>
+                            <input type="checkbox" name="checkbox1" checked>Format Titres<br \>
+                            <input type="checkbox" name="checkbox2">Git Pull<br \>
+                            <input type="checkbox" name="checkbox3">Git Push<br \>
+                            <a href="#table">Retour à la Table des Matières</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
