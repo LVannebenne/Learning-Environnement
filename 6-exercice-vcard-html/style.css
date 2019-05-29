@@ -62,9 +62,6 @@ body {
     animation-duration: 5s;
 }
 
-
-
-
 .comp {
     display: flex;
     flex-direction: column;
@@ -112,4 +109,9 @@ img {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
+}
 
+a, a:link, a:visited, a:hover, a:active {
+    color: #804050;
+    text-decoration: none;
+}
