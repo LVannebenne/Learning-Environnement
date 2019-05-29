@@ -87,7 +87,7 @@ a {
 
 .container-body {
     width: 80%;
-    height: 800px;
+    height: 1000px;
     margin: auto;
     margin-top: 5px;
     padding: 5px;
@@ -126,6 +126,11 @@ a {
     color: #6F8055;
     margin: 3px;
     padding: 2px;
+}
+
+.iframe {
+    width: 100%;
+    min-height: 300px;
 }
 
 
