@@ -1,1 +1,69 @@
-! 
+
+
+body {
+    background-image: url(image2vector.svg);
+    background-size: cover;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.text {
+    position: relative;
+    top: -430px;
+    width: 25%;
+    margin: auto;
+}
+
+@keyframes example {
+    0% {fill: #5E4F80}
+    50% {fill: #FFA74A}
+    100% {fill: #5E4F80}
+  }
+
+#cercle {
+    fill: #5E4F80;
+}
+
+#cercle:hover {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.imgsvg {
+    z-index= -1;
+    width: 500px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 0.1rem solid white;
+    padding: 4px;
+}
+
+
