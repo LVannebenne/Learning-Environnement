@@ -1,0 +1,97 @@
+body {
+	background-color: #DDD;
+	color: #555;
+}
+
+.alert {
+	margin-bottom: -10px;
+}
+
+.main {
+	background-color: #CCC;
+	padding-top: 30px;
+}
+
+.medal {
+	background-color: #fbb;
+}
+
+.flex {
+	/*display: flex;
+	flex-flow: row wrap;*/
+}
+
+.progress-bar {
+	background-color: #378;
+}
+
+.titleCat {
+	background-color: #489;
+	color: white;
+	border-radius: 3px 3px;
+}
+
+.btn-perso1 {
+	background-color: #489;
+	color: white;
+}
+
+.info {
+	font-weight: bold;
+}
+
+.btn-perso1:link{
+	color: white;
+}
+
+.logolabel {
+	width: 200px;
+}
+
+.entry:nth-child(odd) {
+	background-color: rgba(255,255,255,0.1);
+}
+
+h4 {
+	color: #489;
+}
+
+.office-word {
+	background-image: url('images/office-word.svg');
+}
+
+.office-excel {
+	background-image: url('images/office-excel.svg');
+}
+
+.office-powerpoint {
+	background-image: url('images/office-powerpoint.svg');
+}
+
+.office-outlook {
+	background-image: url('images/office-outlook.svg');
+}
+
+.office-access {
+	background-image: url('images/office-access.svg');
+}
+
+.illustrator {
+	background-image: url('images/Adobe_Illustrator.svg');
+}
+
+.photoshop {
+	background-image: url('images/Adobe_Photoshop.svg');
+}
+
+.office-word, .office-excel, .office-powerpoint, .office-outlook, .office-access, .illustrator, .photoshop  {
+	background-repeat: no-repeat;
+	background-size: 48px;
+	padding: 16px 64px;
+}
+
+.portrait {
+	width: 200px;
+	border-radius: 50%;
+	padding: 25px;
+}
