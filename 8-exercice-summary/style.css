@@ -9,6 +9,10 @@ body {
     background-color: #EBEBEB;
 }
 
+.container {
+    padding-top: 30px;
+}
+
 h1 {
     color: #D55;
     font-family: 'Montserrat', sans-serif;
@@ -49,9 +53,6 @@ ul {
     padding: 30px;
 }
 
-li {
-
-}
 
 .social, .social:link, .social:visited, .social:hover, .social:active, i {
     display: block;
@@ -74,10 +75,6 @@ i {
     padding: 30px;
     margin-bottom: 20px;
     text-align: center;
-}
-
-.movies {
-    
 }
 
 .portrait {
