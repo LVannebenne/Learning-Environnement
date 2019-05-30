@@ -3,7 +3,7 @@ body {
     background-image: url(starry-night.png);
     font-family: 'HELVETICA', sans-serif;
     font-stretch: extra-expanded;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .container{
@@ -61,7 +61,7 @@ body {
     position: absolute;
     padding: 50px;
     text-align: justify;
-    color: palegoldenrod;
+    color: gold;
     font-size: 2rem;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
