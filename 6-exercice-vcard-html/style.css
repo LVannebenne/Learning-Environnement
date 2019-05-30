@@ -42,8 +42,8 @@
     background-position: center;
     border-radius: 15px;
     border: 0.1rem solid #80666C;
-    border-top: 0.5rem;
-    border-bottom: 0.5rem;
+    border-top: 0.5rem solid #80666C;
+    border-bottom: 0.5rem solid #80666C;
     box-shadow: 3px 3px 3px rgb(59, 46, 49);
     display: flex;
     justify-content: space-between;
