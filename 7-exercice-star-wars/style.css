@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(0,0,15);
+    background-image: url(starry-night.png);
+    font-family: 'HELVETICA', sans-serif;
+    font-stretch: extra-expanded;
+    font-weight: 800;
+}
+
+.container{
+
+}
+
+@keyframes fade2 {
+    from {visibility: visible;}
+    to {visibility: hidden;}
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+    transform: translate(-50%, -50%);
+    animation: fade2;
+    animation-duration: 2s;
+    animation-delay: 5s;
+}
+
+@keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.intro {
+    color: deepskyblue;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: fade;
+    animation-duration: 5s;
+    animation-fill-mode: backwards;
+}
+
+.persp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+}
+
+@keyframes defil{
+    from {transform:translate(0,850px);}
+    to {transform:translate(0,-5000px);}
+}
+
+.text {
+    position: absolute;
+    padding: 50px;
+    text-align: justify;
+    color: palegoldenrod;
+    font-size: 2rem;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotatex(65deg);
+    -webkit-transform: rotatex(65deg);
+}
+
+.defile {  
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d; 
+    animation: defil;
+    animation-duration: 270s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    animation-fill-mode: backwards;
+}
+
+h1, h2 {
+    text-align: center;
+    font-stretch: extra-expanded;
+    margin: 0;
+    padding: 0;
+}
