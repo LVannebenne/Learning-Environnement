@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Balance :</label>
+        <input id="bank" type="text" value="" readonly>
+    </div>
+
+    <input id="prod" type="text" value="MyBigProduct" readonly><br \>
+    <input id="price" type="text"  size="5" value="" readonly> €
+    <input id="qt" type="number" size="5" value="">
+    <button id="button" onclick="buy()">
+        Acheter !
+    </button>
+
+    <div id="test">
+
+    </div>
+    <script type="text/javascript">
+        var price = 99,99;
+        var acc_price = 9,99;
+        var currency = " €";
+        var TAX_RATE = 0,21;
+
+        var bank_account = 333;
+        var balance = bank_account.toString() + currency;
+
+        document.getElementById("bank").value = balance;
+        document.getElementById("price").value = price;
+
+        var a = math.round(price*100)/100;
+        var a = a.toFixed(2);
+        document.getElementById("test").innerHTML = a;
+
+        function buy()
+        {
+            var quantity = document.getElementById("qt").value;
+            var total = price*quantity;
+            document.getElementById("test").innerHTML = total;
+            var total = math.round(total*100)/100;
+            var total = total.toFixed(2);
+            if (bank_account>total){
+            document.getElementById("test").innerHTML = "Successfully bought " + quantity + " for " + total;
+            }
+            else{
+                document.getElementById("test").innerHTML = "I'm sorry, operation aborted." + total;
+            }
+        }
+        
+    </script>
+</body>
+</html>

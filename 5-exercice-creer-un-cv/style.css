@@ -1,9 +1,30 @@
 * {
     box-sizing: border-box;
     border: 0.1rem solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 780px;
+    margin: auto;
+    font-size: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstcol {
+    min-width: 150px;
 }
 
 /* 
 colors :
 
  */
+
+.photo {
+     width: 200px;
+     border-radius: 25%;
+ }
