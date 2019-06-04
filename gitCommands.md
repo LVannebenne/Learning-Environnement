@@ -55,7 +55,7 @@ Récupérer les informations(en-têtes) des branches/dépôts en ligne
 
 Propager les informations que l'on possède (/!\ Dangereux)
 
-    git fetch -all -prune
+    git fetch --all -prune
 
 Supprimer les modifications d'un fichier en local 
 
